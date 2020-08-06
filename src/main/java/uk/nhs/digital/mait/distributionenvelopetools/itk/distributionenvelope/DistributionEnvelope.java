@@ -15,7 +15,6 @@ Copyright 2012 Damian Murphy <murff@warlock.org>
  */
 // $Id: DistributionEnvelope.java 36 2019-06-05 12:59:08Z sfarrow $
 // rev 33 Fix for #2435 Bus Ack timestamps wrong during DST
-
 package uk.nhs.digital.mait.distributionenvelopetools.itk.distributionenvelope;
 
 /**
@@ -25,12 +24,15 @@ package uk.nhs.digital.mait.distributionenvelopetools.itk.distributionenvelope;
  *
  * @author Damian Murphy <murff@warlock.org>
  */
+import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Properties;
 import java.util.UUID;
+import uk.nhs.digital.mait.commonutils.util.CommonUtils;
 
 public class DistributionEnvelope
         implements java.io.Serializable {
@@ -517,7 +519,15 @@ public class DistributionEnvelope
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        System.out.println("DistributionEnvelopeTools: $Rev: 36 $");
+    public static void main(String[] args) throws IOException {
+        ClassLoader classLoader = CommonUtils.class.getClassLoader();
+        Properties properties = new Properties();
+        properties.load(classLoader.getResourceAsStream("git.properties"));
+        String versionString = String.format("DistributionEnvelopeTools-%s %s %s",
+                properties.getProperty("git.build.version"),
+                properties.getProperty("git.commit.id.abbrev"),
+                properties.getProperty("git.commit.time"));
+
+        System.out.println(versionString);
     }
 }

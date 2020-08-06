@@ -41,9 +41,9 @@ public class AckDistributionEnvelope
     protected String serviceRef = null;
     
     /** Property name for the router's identity, declared in acks and nacks */
-    private static final String AUDIT_ID_PROPERTY = "uk.nhs.digital.mait.distributionenvelopetools.itk.router.auditidentity";
+    private static final String AUDIT_ID_PROPERTY = "org.warlock.itk.router.auditidentity";
     /** Property name for the router's address */
-    private static final String SENDER_PROPERTY = "uk.nhs.digital.mait.distributionenvelopetools.itk.router.senderaddress";
+    private static final String SENDER_PROPERTY = "org.warlock.itk.router.senderaddress";
     private static final String ACK_TEMPLATE = "infrastructure_ack_template.xml.txt";
     protected String ackTemplateNameLocation = ACK_TEMPLATE;
     /** Constructor. Note that construction of this class, and actual making of

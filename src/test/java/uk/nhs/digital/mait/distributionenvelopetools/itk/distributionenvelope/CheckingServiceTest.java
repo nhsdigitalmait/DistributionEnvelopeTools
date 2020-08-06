@@ -60,7 +60,7 @@ public class CheckingServiceTest {
     public void testAddCheck() throws Exception {
         System.out.println("addCheck");
         String s = "fqitkservicename";
-        String c = "org.warlock.itk.distributionenvelope.Checker";
+        String c = "uk.nhs.digital.mait.distributionenvelopetools.itk.distributionenvelope.Checker";
         instance.addCheck(s, c);
     }
 

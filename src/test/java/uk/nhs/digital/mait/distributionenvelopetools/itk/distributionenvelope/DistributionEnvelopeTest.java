@@ -462,7 +462,7 @@ public class DistributionEnvelopeTest {
      */
     @Test
     public void write() throws Exception {
-        String[] args = {"write", "text/xml", "test/payload.xml"};
+        String[] args = {"write", "text/xml", "src/test/resources/payload.xml"};
         DistributionEnvelope d = DistributionEnvelope.newInstance();
         d.addRecipient(null, "test:address:one");
         d.addRecipient("1.2.826.0.1285.0.2.0.107", "123456789012");
