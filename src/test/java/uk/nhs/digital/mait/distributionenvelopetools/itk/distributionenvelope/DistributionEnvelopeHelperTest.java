@@ -13,7 +13,6 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  */
-// $Id: DistributionEnvelopeHelperTest.java 34 2017-06-08 12:47:40Z sfarrow $
 package uk.nhs.digital.mait.distributionenvelopetools.itk.distributionenvelope;
 
 import java.io.FileInputStream;

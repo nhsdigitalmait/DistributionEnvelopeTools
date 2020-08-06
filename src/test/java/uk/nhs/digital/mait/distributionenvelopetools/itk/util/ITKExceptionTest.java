@@ -13,7 +13,6 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  */
-// $Id: ITKExceptionTest.java 32 2017-04-20 11:54:19Z sfarrow $
 package uk.nhs.digital.mait.distributionenvelopetools.itk.util;
 
 import java.util.logging.Level;

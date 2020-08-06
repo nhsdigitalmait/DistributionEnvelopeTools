@@ -13,7 +13,6 @@ Copyright 2012 Damian Murphy <murff@warlock.org>
    See the License for the specific language governing permissions and
    limitations under the License.
  */
-// $Id: DistributionEnvelope.java 36 2019-06-05 12:59:08Z sfarrow $
 // rev 33 Fix for #2435 Bus Ack timestamps wrong during DST
 package uk.nhs.digital.mait.distributionenvelopetools.itk.distributionenvelope;
 

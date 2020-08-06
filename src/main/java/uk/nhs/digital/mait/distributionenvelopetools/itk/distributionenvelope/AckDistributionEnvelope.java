@@ -13,7 +13,6 @@ Copyright 2011 Damian Murphy <murff@warlock.org>
    See the License for the specific language governing permissions and
    limitations under the License.
  */
-// $Id: AckDistributionEnvelope.java 33 2017-05-12 08:56:00Z sfarrow $
 
 package uk.nhs.digital.mait.distributionenvelopetools.itk.distributionenvelope;
 import java.io.InputStream;

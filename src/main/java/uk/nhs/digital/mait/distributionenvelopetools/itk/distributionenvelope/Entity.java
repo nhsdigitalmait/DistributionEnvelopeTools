@@ -13,7 +13,6 @@ Copyright 2011 Damian Murphy <murff@warlock.org>
    See the License for the specific language governing permissions and
    limitations under the License.
  */
-// $Id: Entity.java 30 2016-02-23 13:42:56Z sfarrow $
 package uk.nhs.digital.mait.distributionenvelopetools.itk.distributionenvelope;
 import java.util.ArrayList;
 /** Common abstract superclass for Address and Identity classes. An "entity"
