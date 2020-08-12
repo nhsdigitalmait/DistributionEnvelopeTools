@@ -565,4 +565,15 @@ public class DistributionEnvelopeTest {
         return sb.toString();
     }
 
+    /**
+     * Test of main method, of class DistributionEnvelope.
+     * @throws java.lang.Exception
+     */
+    @Test
+    public void testMain() throws Exception {
+        System.out.println("main");
+        String[] args = new String[0];
+        DistributionEnvelope.main(args);
+    }
+
 }

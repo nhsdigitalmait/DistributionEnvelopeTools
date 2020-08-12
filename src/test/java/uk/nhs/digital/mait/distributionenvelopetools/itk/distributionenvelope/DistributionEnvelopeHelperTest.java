@@ -119,8 +119,8 @@ public class DistributionEnvelopeHelperTest {
     @Test
     public void testGetPayloads() throws Exception {
         System.out.println("getPayloads");
-        System.setProperty("org.warlock.itk.router.auditidentity", "auditid");
-        System.setProperty("org.warlock.itk.router.senderaddress", "senderaddress");
+        System.setProperty("uk.nhs.digital.mait.distributionenvelopetools.itk.router.auditidentity", "auditid");
+        System.setProperty("uk.nhs.digital.mait.distributionenvelopetools.itk.router.senderaddress", "senderaddress");
 
         InputStream is = new FileInputStream(System.getenv("TKWROOT") + "/contrib/ITK_2_01_Test_Messages/Correspondence_DE/Ambulance/POCD_MT030001UK01_DIST_Primary.xml");
         DistributionEnvelope d = DistributionEnvelopeHelper.getInstance().getDistributionEnvelope(is);
